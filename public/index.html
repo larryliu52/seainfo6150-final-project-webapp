@@ -14,6 +14,8 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,7 +25,496 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Home | IS | CoE | NEU</title>
+    <style>
+      .whole-page {
+        width: 100%;
+        line-height: 1.8;
+        font-weight: 400;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: left;
+        box-sizing: border-box;
+        display: block;
+      }
+      .top-university-name-bar {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        color: black;
+        background-color: white;
+        border-top: 5px solid #D41B2C;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .top-university-name {
+        max-width: 1140px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 !important;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+      }
+      .logo-navbar {
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .logo {
+        min-height: 85px;
+        max-width: 1140px;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        display: flex !important;
+      }
+      .logo2 {
+        padding-right: 1rem !important;
+        flex: 1 1 auto !important;
+        display: flex !important;
+      }
+      .logo-picture {
+        float: left;
+        display: flex;
+        align-items: center;
+      }
+      .logo-picture2 {
+        display: block;
+        height: 36px;
+        width: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: -999999px;
+        border-radius: 50%;
+      }
+      .logo-word {
+        float: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 15px;
+        margin-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 0px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #D41B2C;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .college-name {
+        width: 100%;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+      .program-name {
+        width: 100%;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.4px;
+        display: block;
+        text-decoration-line: none;
+        text-decoration-style: initial;
+        text-decoration-color: initial;
+      }
+      .navbar {
+        background-color: #D41B2C;
+        max-width: 1140px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0 !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .navbar2 {
+        display: flex !important;
+        flex-basis: auto;
+        flex-grow: 1;
+        align-items: center;
+      }
+      .navbar-items {
+        flex-direction: row;
+        width: 100% !important;
+        display: flex;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        list-style-position: initial;
+        list-style-image: initial;
+        list-style-type: none;
+      }
+      .navbar-item {
+        column-width: initial;
+        column-count: initial;
+        position: static;
+        flex-grow: 1;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        column-gap: 2.5rem;
+        display: list-item;
+      }
+      .item {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        white-space: nowrap;
+        text-decoration-line: none;
+        text-decoration-style: initial;
+        text-decoration-color: initial;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .page-cf {
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      .page-tl {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1.2rem;
+        overflow-anchor: none;
+      }
+      .post {
+        margin-top: 0 !important;
+        padding-top: 1rem !important;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 0px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        min-width: calc(100% + 30px);
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: white;
+        color: #D41B2C;
+        display: block;
+      }
+      .highlightpost {
+        width: 100%;
+        position: relative;
+      }
+      .degree-bar {
+        margin-top: 0px;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 0px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        min-width: calc(100% + 30px);
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: #D41B2C;
+        color: white;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        display: block;
+      }
+      .degree-bar-2 {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        z-index: 2;
+        text-align: center !important;
+        display: block;
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .degree-bar-box {
+        width: 405px;
+        color: white;
+        display: block;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 0.8em;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+        text-decoration-line: none;
+        text-decoration-style: initial;
+        text-decoration-color: initial;
+        background-color: transparent;
+      }
+      .month {
+        font-size: 0.9rem !important;
+        display: block;
+        color: white;
+      }
+      .day {
+        font-size: 1.6rem !important;
+        display: block;
+        color: white;
+      }
+      .new-event {
+        background-color: white;
+        box-sizing: inherit;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: block;
+        line-height: 1.5;
+        margin-top: -60px;
+      }
+      .new-event-padding {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .new-evemt-block {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      .new-event-title {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -2rem;
+        margin-right: 0px;
+        color: #D41B2C;
+      }
+      .new-event-boxes {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -1.5rem;
+        margin-right: 0px;
+      }
+      .new-event-box {
+        width: calc(25%);
+        display: block;
+      }
+      .new-event-picture {
+        flex-shrink: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .new-event-picture2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 15px;
+      }
+      .new-event-text1 {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .footer {
+        box-sizing: inherit;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: block;
+      }
+      .footer-top {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: #D41B2C;
+      }
+      .footer-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .footer-text {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 50%;
+      }
+      .footer-text-detail {
+        color: white;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      .footer-copyright-color {
+        font-size: 0.9rem;
+        color: white;
+      }
+      .fill-color {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        background-color: #D41B2C;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 20%;
+        max-width: 20%;
+      }
+      
+      .about-box {
+        margin-top: 0 !important;
+        margin-bottom: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        min-width: calc(100% + 30px);
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: #D41B2C;
+        color: white;
+        display: block;
+        font-size: 19px;
+      }
+      .about-rank-box {
+        margin-top: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        min-width: calc(100% + 30px);
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: white;
+        color: #D41B2C;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+      }
+      .about-rank-single-box {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        z-index: 2;
+      }
+      .about-rank-text {
+        color: #D41B2C;
+        text-align: center;
+        font-size: 6em;
+        line-height: 1.5;
+        margin-bottom: 0;
+        margin-top: 0;
+        display: block;
+      }
+      .about-rank-text-down {
+        text-align: center;
+        line-height: 130%;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .people-font-color {
+        color: #D41B2C;
+      }
+      
+      
+
+
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
