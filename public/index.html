@@ -283,7 +283,7 @@
         background-position-y: center;
         z-index: 2;
         text-align: center !important;
-        display: block;
+        display: flex;
         opacity: 1;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -510,7 +510,205 @@
       .people-font-color {
         color: #D41B2C;
       }
+      .academics-student-life-frame {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% - 1.2rem);
+        max-width: calc(100% - 1.2rem);
+        min-width: calc(100% - 1.2rem);
+        position: relative;
+        margin-top: 1.2rem;
+        margin-bottom: 0px;
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: black;
+        color: white;
+        display: block;
+        box-sizing: border-box;
+      }
+      .academics-student-life-box {
+        height: 100%;
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        z-index: 2;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+      }
+      .academics-student-life-box-internal {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        box-sizing: border-box;
+      }
+      .academics-student-life-box-internal-left {
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        max-width: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+      }
+      .academics-student-life-box-internal-left-text {
+        text-align: right;
+      }
+      .academics-student-life-box-internal-right {
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 15px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        max-width: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+      }
+      .academics-student-life-box-internal-right-internal {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .academics-student-life-box-internal-right-internal-image {
+        max-width: 100%;
+        height: auto;
+        width: 399px;
+        vertical-align: middle;
+        border-top-style: none;
+        border-bottom-style: none;
+        border-left-style: none;
+        border-right-style: none;
+      }
+      .courses-list {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15;
+        box-sizing: border-box;
+      }
+      .courses-list-table {
+        margin-bottom: 1rem;
+        width: 100%;
+        color: black;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(199, 199, 199);
+        border-collapse: collapse;
+        display: table;
+      }
+      .courses-padding {
+        padding-left: 60px;
+      }
       
+      .apply-box {
+        margin-top: 0;
+        margin-bottom: -1.2rem;
+        margin-left: -20px;
+        margin-right: -20px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        min-width: calc(100% + 30px);
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: #f8f8f8;
+        color: black;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        box-sizing: border-box;
+      }
+      .apply-box-left {
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+      }
+      .apply-image {
+        width: 399px;
+        border-radius: 50%;
+      }
+      .apply-button {
+        position: relative;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 15px;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+      }
+      .apply-button-frame {
+        border-top-color: rgb(40, 76, 144);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(40, 76, 144);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(40, 76, 144);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(40, 76, 144);
+        border-left-style: solid;
+        border-left-width: 1px;
+        background-color: #D41B2C;
+        color: white;
+        font-weight: 666;
+        min-height: 50;
+        display: inline-block;
+        line-height: 35px;
+        text-align: center;
+        padding-top: 3px;
+        padding-right: 1rem;
+        padding-bottom: 3px;
+        padding-left: 1rem;
+        text-decoration-line: none;
+      }
       
 
 

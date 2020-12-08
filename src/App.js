@@ -11,6 +11,12 @@ import Admissions from "./Admissions/Admissions.jsx";
 import People from "./People/People.jsx";
 import StudentLife from "./StudentLife/StudentLife.jsx";
 import Research from "./Research/Research.jsx";
+import NewsAndEvents from "./NewsAndEvents/NewsAndEvents.jsx";
+import Academics from "./Academics/Academics.jsx";
+import Courses from "./Courses/Courses.jsx";
+import Bachelor from "./Bachelor/Bachelor.jsx";
+import Master from "./Master/Master.jsx";
+import Doctoral from "./Doctoral/Doctoral.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -34,6 +40,12 @@ function App() {
         <Route path="/people" exact component={People} />
         <Route path="/studentlife" exact component={StudentLife} />
         <Route path="/research" exact component={Research} />
+        <Route path="/newsandevents" exact component={NewsAndEvents} />
+        <Route path="/academics" exact component={Academics} />
+        <Route path="/courses" exact component={Courses} />
+        <Route path="/bachelor" exact component={Bachelor} />
+        <Route path="/master" exact component={Master} />
+        <Route path="/doctoral" exact component={Doctoral} />
         {/* passing parameters via a route path */}
         <Route
           path="/bar/:categoryId/:productId"

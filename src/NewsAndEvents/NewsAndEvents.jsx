@@ -2,12 +2,12 @@ import React from 'react'
 import Form from "../Form/Form";
 import NEUCoE from "../images/NEUCoE.png";
 import neusea from "../images/neusea.png";
-import sea1 from "../images/sea1.jpg";
-import sea2 from "../images/sea2.jpg";
-import sea3 from "../images/sea3.jpg";
-import sea4 from "../images/sea4.jpg";
+import sea1 from "../images/sea1.jpg"
+import sea2 from "../images/sea2.jpg"
+import sea3 from "../images/sea3.jpg"
+import sea4 from "../images/sea4.jpg"
 
-const Home = () => {
+const NewsAndEvents = () => {
     return (
         <body class="whole-page">
             <header>
@@ -48,7 +48,7 @@ const Home = () => {
                                     <a href="/people" class="item">People</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="/academics" class="item">Academics</a>
+                                    <a href="#" class="item">Academics</a>
                                 </li>
                                 <li class="navbar-item">
                                     <a href="/studentlife" class="item">Student Life</a>
@@ -57,7 +57,7 @@ const Home = () => {
                                     <a href="/research" class="item">Research</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="/newsandevents" class="item">News and Events</a>
+                                    <a href="#" class="item">News and Events</a>
                                 </li>
                             </ul>
                         </div>
@@ -70,19 +70,6 @@ const Home = () => {
                         <div class="page-tl">
                             <section class="post">
                                 <img src={neusea} alt="Seattle campus" class="highlightpost"/>
-                            </section>
-                            <section class="degree-bar">
-                                <div class="degree-bar-2">
-                                    <a href="/bachelor" class="degree-bar-box">
-                                        Bachelor's
-                                    </a>
-                                    <a href="/master" class="degree-bar-box">
-                                        Master's
-                                    </a>
-                                    <a href="/doctoral" class="degree-bar-box">
-                                        Doctoral
-                                    </a>
-                                </div>
                             </section>
                             <section class="new-event">
                                 <div class="new-event-padding">
@@ -175,4 +162,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default NewsAndEvents
