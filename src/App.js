@@ -32,7 +32,7 @@ function App() {
     <>
       <header>
         <nav>
-          <Link to="/about">About</Link>
+          
           <ul>
             {/* these links should show you how to connect up a link to a specific route */}
             <li>

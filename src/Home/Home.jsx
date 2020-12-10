@@ -8,6 +8,8 @@ import sea3 from "../images/sea3.jpg";
 import sea4 from "../images/sea4.jpg";
 import treefrog from "../images/treefrog.jpg";
 
+import { Switch, Route, Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <body class="whole-page">
@@ -46,7 +48,8 @@ const Home = () => {
                         <div class="navbar2">
                             <ul class="navbar-items">
                                 <li class="navbar-item">
-                                    <a href="/about" class="item">About</a>
+                                    
+                                    <Link to="/about">About</Link>
                                 </li>
                                 <li class="navbar-item">
                                     <a href="/admissions" class="item">Admissions</a>
