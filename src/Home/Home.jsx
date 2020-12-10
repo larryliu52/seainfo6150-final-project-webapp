@@ -48,11 +48,10 @@ const Home = () => {
                         <div class="navbar2">
                             <ul class="navbar-items">
                                 <li class="navbar-item">
-                                    
-                                    <Link to="/about">About</Link>
+                                    <a href="/seainfo6150-final-project-webapp/about" class="item">About</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="/admissions" class="item">Admissions</a>
+                                    <Link to="/admissions">Admissions</Link>
                                 </li>
                                 <li class="navbar-item">
                                     <a href="/people" class="item">People</a>
