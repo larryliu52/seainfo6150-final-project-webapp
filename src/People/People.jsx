@@ -12,7 +12,7 @@ const People = () => {
             <header>
                 <div class="top-university-name-bar">
                     <div class="top-university-name">
-                        <span>Northeastern University</span>
+                        <span>XXXXXX University</span>
                     </div>
                 </div>
                 <div class="logo-navbar">
@@ -20,7 +20,7 @@ const People = () => {
                         <div class="logo2">
                             <div class="logo-picture">
                                 <a href="/">
-                                    <img src={NEUCoE} alt="Northeastern University College of Engineering" class="logo-picture2"/>
+                                    <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
                                 </a>
                             </div>
                             <div class="logo-word">
@@ -38,25 +38,25 @@ const People = () => {
                         <div class="navbar2">
                             <ul class="navbar-items">
                                 <li class="navbar-item">
-                                    <a href="#" class="item">About</a>
+                                    <a href="/about" class="item">About</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">Admissions</a>
+                                    <a href="/admissions" class="item">Admissions</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">People</a>
+                                    <a href="people" class="item">People</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">Academics</a>
+                                    <a href="academics" class="item">Academics</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">Student Life</a>
+                                    <a href="studentlife" class="item">Student Life</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">Research</a>
+                                    <a href="#research" class="item">Research</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">News and Events</a>
+                                    <a href="newsandevents" class="item">News and Events</a>
                                 </li>
                             </ul>
                         </div>
@@ -75,7 +75,7 @@ const People = () => {
                                     <h2 class="people-font-color">
                                         Our Faculty: Innovators and Inventors!
                                     </h2>
-                                    <p>The College of Engineering at Northeastern has over 180 faculty and they are innovators and inventors and ......</p>
+                                    <p>The College of Engineering at XXXXXX has over 180 faculty and they are innovators and inventors and ......</p>
                                 </div>
                             </section>
                             
@@ -91,7 +91,7 @@ const People = () => {
                     <div class="footer-container">
                         <div class="footer-text">
                             <h3 class="footer-text-detail">
-                                Northeastern University College of Engineering
+                                XXXXXX University College of Engineering
                             </h3>
                             <h3 class="footer-copyright-color">Address here, City, State Postcode | Phone number here</h3>
                             <h3 class="footer-copyright-color">© Copyright here</h3>

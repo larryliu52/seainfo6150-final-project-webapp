@@ -13,7 +13,7 @@ const NewsAndEvents = () => {
             <header>
                 <div class="top-university-name-bar">
                     <div class="top-university-name">
-                        <span>Northeastern University</span>
+                        <span>XXXXXX University</span>
                     </div>
                 </div>
                 <div class="logo-navbar">
@@ -21,7 +21,7 @@ const NewsAndEvents = () => {
                         <div class="logo2">
                             <div class="logo-picture">
                                 <a href="/">
-                                    <img src={NEUCoE} alt="Northeastern University College of Engineering" class="logo-picture2"/>
+                                    <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
                                 </a>
                             </div>
                             <div class="logo-word">
@@ -48,7 +48,7 @@ const NewsAndEvents = () => {
                                     <a href="/people" class="item">People</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">Academics</a>
+                                    <a href="/academics" class="item">Academics</a>
                                 </li>
                                 <li class="navbar-item">
                                     <a href="/studentlife" class="item">Student Life</a>
@@ -57,7 +57,7 @@ const NewsAndEvents = () => {
                                     <a href="/research" class="item">Research</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">News and Events</a>
+                                    <a href="/newsandevents" class="item">News and Events</a>
                                 </li>
                             </ul>
                         </div>
@@ -151,7 +151,7 @@ const NewsAndEvents = () => {
                 <div class="footer-top">
                     <div class="footer-container">
                         <h3 class="footer-text-detail">
-                            Northeastern University College of Engineering
+                            XXXXXX University College of Engineering
                         </h3>
                         <h3 class="footer-copyright-color">Address here, City, State Postcode | Phone number here</h3>
                         <h3 class="footer-copyright-color">© Copyright here</h3>

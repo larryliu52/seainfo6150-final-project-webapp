@@ -10,7 +10,7 @@ const Home = () => {
             <header>
                 <div class="top-university-name-bar">
                     <div class="top-university-name">
-                        <span>Northeastern University</span>
+                        <span>XXXXXX University</span>
                     </div>
                 </div>
                 <div class="logo-navbar">
@@ -18,7 +18,7 @@ const Home = () => {
                         <div class="logo2">
                             <div class="logo-picture">
                                 <a href="/">
-                                    <img src={NEUCoE} alt="Northeastern University College of Engineering" class="logo-picture2"/>
+                                    <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
                                 </a>
                             </div>
                             <div class="logo-word">
@@ -45,7 +45,7 @@ const Home = () => {
                                     <a href="/people" class="item">People</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="item">Academics</a>
+                                    <a href="/academics" class="item">Academics</a>
                                 </li>
                                 <li class="navbar-item">
                                     <a href="/studentlife" class="item">Student Life</a>
@@ -70,13 +70,13 @@ const Home = () => {
                             </section>
                             <section class="degree-bar">
                                 <div class="degree-bar-2">
-                                    <a href="/" class="degree-bar-box">
+                                    <a href="/bachelor" class="degree-bar-box">
                                         Bachelor's
                                     </a>
-                                    <a href="/" class="degree-bar-box">
+                                    <a href="/master" class="degree-bar-box">
                                         Master's
                                     </a>
-                                    <a href="/" class="degree-bar-box">
+                                    <a href="/doctoral" class="degree-bar-box">
                                         Doctoral
                                     </a>
                                     <a href="/courses" class="degree-bar-box">
@@ -113,7 +113,7 @@ const Home = () => {
                 <div class="footer-top">
                     <div class="footer-container">
                         <h3 class="footer-text-detail">
-                            Northeastern University College of Engineering
+                            XXXXXX University College of Engineering
                         </h3>
                         <h3 class="footer-copyright-color">Address here, City, State Postcode | Phone number here</h3>
                         <h3 class="footer-copyright-color">© Copyright here</h3>
