@@ -6,10 +6,17 @@ import sea1 from "../images/sea1.jpg";
 import sea2 from "../images/sea2.jpg";
 import sea3 from "../images/sea3.jpg";
 import sea4 from "../images/sea4.jpg";
+import treefrog from "../images/treefrog.jpg";
 
 const Home = () => {
     return (
         <body class="whole-page">
+            <div>
+                The home page
+                <h1>I changed this homepage</h1>
+                <img src={treefrog} alt="tree frog" />
+                <Form />
+            </div>
             <header>
                 <div class="top-university-name-bar">
                     <div class="top-university-name">
