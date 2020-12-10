@@ -3,6 +3,9 @@ import Form from "../Form/Form";
 import NEUCoE from "../images/NEUCoE.png";
 import neusea from "../images/neusea.png";
 import applyImage from "../images/apply.jpg"
+import { Route, Link } from 'react-router-dom';
+
+import Apply from "../Apply/Apply.jsx"
 
 const Home = () => {
     return (
@@ -45,7 +48,8 @@ const Home = () => {
                                 <div class="apply-button">
                                     <h2>Apply now!</h2>
                                     <div>
-                                        <a class="apply-button-frame" href="/">Apply</a>
+                                        <Link to="/apply/Bachelor" class="apply-button-frame">Apply</Link>
+                                        <Route path="/apply" exact component={Apply} />
                                     </div>
                                 </div>
                             </section>

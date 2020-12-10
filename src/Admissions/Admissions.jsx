@@ -33,12 +33,8 @@ const Admissions = () => {
                                     <h2>Admissions Requirements</h2>
                                     <p>Applicants must have:</p>
                                     <ul>
-                                        <li>A eligible bachelor's degree</li>
-                                        <li>3.0 GPA</li>
                                         <li>Toefl</li>
                                         <li>GRE</li>
-                                        <li>CV</li>
-                                        <li>PS</li>
                                     </ul>
                                     <h2>Tuition</h2>
                                     <p><b>Tuition</b>: $999 per credit hour</p>

@@ -1,10 +1,5 @@
 import React from 'react'
-import NEUCoE from "../images/NEUCoE.png";
 import neusea from "../images/neusea.png";
-import sea1 from "../images/sea1.jpg"
-import sea2 from "../images/sea2.jpg"
-import sea3 from "../images/sea3.jpg"
-import sea4 from "../images/sea4.jpg"
 
 const About = () => {
     return (
@@ -68,10 +63,6 @@ const About = () => {
                                     </p>
                                 </div>
                             </section>
-
-
-
-
                         </div>
                     </div>
                 </main>

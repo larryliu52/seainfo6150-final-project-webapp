@@ -18,6 +18,9 @@ import Bachelor from "./Bachelor/Bachelor.jsx";
 import Master from "./Master/Master.jsx";
 import Doctoral from "./Doctoral/Doctoral.jsx";
 import NEUCoE from "./images/NEUCoE.png";
+import Apply from "./Apply/Apply.jsx"
+import Success from "./Success/Success.jsx"
+
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -44,7 +47,7 @@ function App() {
                         <Link to="/">
                             <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
                         </Link>
-                        
+
                     </div>
                     <div class="logo-word">
                         <div class="college-name">
@@ -102,7 +105,18 @@ function App() {
         <Route path="/bachelor" exact component={Bachelor} />
         <Route path="/master" exact component={Master} />
         <Route path="/doctoral" exact component={Doctoral} />
+        <Route path="/success" exact component={Success} />
         {/* passing parameters via a route path */}
+        <Route 
+          path="/apply/:degree" 
+          exact
+          render={({ match }) => (
+            <Apply
+              degree={match.params.degree}
+            />
+          )}
+        />
+
         <Route
           path="/bar/:categoryId/:productId"
           exact
