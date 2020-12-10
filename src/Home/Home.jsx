@@ -38,6 +38,8 @@ const Home = () => {
                                 <div class="new-event-padding">
                                     <div class="new-evemt-block">
                                         <div class="new-event-title">
+                                            <p><h1 class="page-font-size">Welcome to our university's web page!</h1></p>
+                                            
                                             <h2>
                                                 Upcoming Events
                                             </h2>

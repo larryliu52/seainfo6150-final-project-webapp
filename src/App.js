@@ -41,9 +41,10 @@ function App() {
             <div class="logo">
                 <div class="logo2">
                     <div class="logo-picture">
-                        <a href="/">
+                        <Link to="/">
                             <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
-                        </a>
+                        </Link>
+                        
                     </div>
                     <div class="logo-word">
                         <div class="college-name">
