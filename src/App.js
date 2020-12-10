@@ -17,6 +17,7 @@ import Courses from "./Courses/Courses.jsx";
 import Bachelor from "./Bachelor/Bachelor.jsx";
 import Master from "./Master/Master.jsx";
 import Doctoral from "./Doctoral/Doctoral.jsx";
+import NEUCoE from "./images/NEUCoE.png";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -31,24 +32,58 @@ function App() {
   return (
     <>
       <header>
-        
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
+        <div class="top-university-name-bar">
+            <div class="top-university-name">
+                <span>XXXXXX University</span>
+            </div>
+        </div>
+        <div class="logo-navbar">
+            <div class="logo">
+                <div class="logo2">
+                    <div class="logo-picture">
+                        <a href="/">
+                            <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
+                        </a>
+                    </div>
+                    <div class="logo-word">
+                        <div class="college-name">
+                            College of Engineering
+                        </div>
+                        <div class="program-name">
+                            Information Systems
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+                <div class="navbar2">
+                    <ul class="navbar-items">
+                        <li class="navbar-item">
+                          <Link to="/about" class="item">About</Link>
+                        </li>
+                        <li class="navbar-item">
+                          <Link to="/admissions" class="item">Admissions</Link>
+                        </li>
+                        <li class="navbar-item">
+                          <Link to="/academics" class="item">Academics</Link>
+                        </li>
+                        <li class="navbar-item">
+                          <Link to="/people" class="item">People</Link>
+                        </li>
+                        <li class="navbar-item">
+                          <Link to="/studentlife" class="item">Student Life</Link>
+                        </li>
+                        <li class="navbar-item">
+                          <Link to="/research" class="item">Research</Link>
+                        </li>
+                        <li class="navbar-item">
+                          <Link to="/newsandevents" class="item">News and Events</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
       </header>
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}

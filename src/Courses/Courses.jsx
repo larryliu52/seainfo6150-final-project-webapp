@@ -6,60 +6,7 @@ import neusea from "../images/neusea.png";
 const Home = () => {
     return (
         <body class="whole-page">
-            <header>
-                <div class="top-university-name-bar">
-                    <div class="top-university-name">
-                        <span>Northeastern University</span>
-                    </div>
-                </div>
-                <div class="logo-navbar">
-                    <div class="logo">
-                        <div class="logo2">
-                            <div class="logo-picture">
-                                <a href="/">
-                                    <img src={NEUCoE} alt="Northeastern University College of Engineering" class="logo-picture2"/>
-                                </a>
-                            </div>
-                            <div class="logo-word">
-                                <div class="college-name">
-                                    College of Engineering
-                                </div>
-                                <div class="program-name">
-                                    Information Systems
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="navbar">
-                        <div class="navbar2">
-                            <ul class="navbar-items">
-                                <li class="navbar-item">
-                                    <a href="/about" class="item">About</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/admissions" class="item">Admissions</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/people" class="item">People</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/academics" class="item">Academics</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/studentlife" class="item">Student Life</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/research" class="item">Research</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/newsandevents" class="item">News and Events</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            
             <div>
                 <main>
                     <div class="page-cf">

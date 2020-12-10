@@ -4,63 +4,17 @@ import NEUCoE from "../images/NEUCoE.png";
 import neusea from "../images/neusea.png";
 import lanzeliu from "../images/Lanze-Liu.jpg"
 
+import Bachelor from "../Bachelor/Bachelor.jsx";
+import Master from "../Master/Master.jsx";
+import Doctoral from "../Doctoral/Doctoral.jsx";
+import Courses from "../Courses/Courses.jsx";
+
+import { Switch, Route, Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <body class="whole-page">
-            <header>
-                <div class="top-university-name-bar">
-                    <div class="top-university-name">
-                        <span>XXXXXX University</span>
-                    </div>
-                </div>
-                <div class="logo-navbar">
-                    <div class="logo">
-                        <div class="logo2">
-                            <div class="logo-picture">
-                                <a href="/">
-                                    <img src={NEUCoE} alt="XXXXXX University College of Engineering" class="logo-picture2"/>
-                                </a>
-                            </div>
-                            <div class="logo-word">
-                                <div class="college-name">
-                                    College of Engineering
-                                </div>
-                                <div class="program-name">
-                                    Information Systems
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="navbar">
-                        <div class="navbar2">
-                            <ul class="navbar-items">
-                                <li class="navbar-item">
-                                    <a href="/about" class="item">About</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/admissions" class="item">Admissions</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/people" class="item">People</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/academics" class="item">Academics</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/studentlife" class="item">Student Life</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/research" class="item">Research</a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="/newsandevents" class="item">News and Events</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            
             <div>
                 <main>
                     <div class="page-cf">
@@ -70,18 +24,14 @@ const Home = () => {
                             </section>
                             <section class="degree-bar">
                                 <div class="degree-bar-2">
-                                    <a href="/bachelor" class="degree-bar-box">
-                                        Bachelor's
-                                    </a>
-                                    <a href="/master" class="degree-bar-box">
-                                        Master's
-                                    </a>
-                                    <a href="/doctoral" class="degree-bar-box">
-                                        Doctoral
-                                    </a>
-                                    <a href="/courses" class="degree-bar-box">
-                                        Courses
-                                    </a>
+                                    <Link to="/bachelor" class="degree-bar-box">Bachelor's</Link>
+                                    <Route path="/bachelor" exact component={Bachelor} />
+                                    <Link to="/master" class="degree-bar-box">Master's</Link>
+                                    <Route path="/master" exact component={Master} />
+                                    <Link to="/doctoral" class="degree-bar-box">Doctoral</Link>
+                                    <Route path="/doctoral" exact component={Doctoral} />
+                                    <Link to="/courses" class="degree-bar-box">Courses</Link>
+                                    <Route path="/courses" exact component={Courses} />
                                 </div>
                             </section>
 
